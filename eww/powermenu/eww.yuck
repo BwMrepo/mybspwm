@@ -1,0 +1,27 @@
+(defwidget bg []
+    (box    :orientation "h"
+            :class "bg"
+            :style "background-image: url('/tmp/i3lock.png')"))
+
+(defwindow background
+    :wm-ignore false
+    :monitor 0 
+    :stacking "fg"
+    :anchor "center"
+    :windowtype "dock"
+    :geometry (geometry     :x "0px"
+                            :y "0px"
+                            :height "100%"
+                            :width "100%")                    
+    (bg))
+
+(defwindow pwmenu 
+    :wm-ignore false 
+    :monitor 0 
+    :stacking "bottom"
+    :windowtype "dock"
+    :geometry (geometry     :x "354px"
+                            :y "204px"
+                            :height "718px"
+                            :width "1204px")               
+    "")

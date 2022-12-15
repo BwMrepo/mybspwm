@@ -1,0 +1,12 @@
+
+(defwindow background 
+    :wm-ignore false 
+    :monitor 0 
+    :stacking "fg"
+    :windowtype "dock"
+    :geometry (geometry     :x "354px"
+                            :y "204px"
+                            :height "718px"
+                            :width "1204px")
+                        
+    "")
